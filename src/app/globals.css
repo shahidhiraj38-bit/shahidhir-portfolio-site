@@ -37,6 +37,45 @@ body {
   animation: float 7s ease-in-out infinite;
 }
 
+.flodesk-shell {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.flodesk-shell form,
+.flodesk-shell [data-ff-el="root"] {
+  width: 100% !important;
+}
+
+.flodesk-shell input,
+.flodesk-shell select,
+.flodesk-shell textarea {
+  min-height: 48px !important;
+  border-radius: 6px !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  background: rgba(5, 7, 13, 0.9) !important;
+  color: #ffffff !important;
+}
+
+.flodesk-shell input::placeholder,
+.flodesk-shell textarea::placeholder {
+  color: rgba(255, 255, 255, 0.46) !important;
+}
+
+.flodesk-shell button {
+  min-height: 48px !important;
+  border-radius: 6px !important;
+  background: #21f5ff !important;
+  color: #05070d !important;
+  font-weight: 800 !important;
+  transition: background 180ms ease, transform 180ms ease !important;
+}
+
+.flodesk-shell button:hover {
+  background: #b7ff4a !important;
+  transform: translateY(-1px);
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
