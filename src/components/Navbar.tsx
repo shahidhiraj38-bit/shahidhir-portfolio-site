@@ -8,11 +8,9 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-ink/85 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <img
-            src="/2-removebg-preview.png"
-            alt="Shahi Dhir logo"
-            className="h-16 w-36 rounded-md border border-cyanGlow/25 bg-white/5 object-contain object-center p-1.5 shadow-glow"
-          />
+          <span className="rounded-md border border-cyanGlow/30 bg-white/5 px-3 py-2 shadow-glow">
+            <span className="block text-xl font-black leading-none tracking-[0.16em] text-white">SHAHIDHIR</span>
+          </span>
           <span>
             <span className="block text-lg font-bold tracking-wide">shahidhir</span>
             <span className="block text-xs text-white/55">AI Marketing Expert</span>
