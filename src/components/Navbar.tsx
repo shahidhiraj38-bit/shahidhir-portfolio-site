@@ -9,9 +9,9 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/shahidhir-logo.png"
+            src="/2-removebg-preview.png"
             alt="Shahi Dhir logo"
-            className="h-12 w-20 rounded-md border border-cyanGlow/25 object-cover object-center shadow-glow"
+            className="h-12 w-24 rounded-md border border-cyanGlow/25 bg-white/5 object-contain object-center p-1 shadow-glow"
           />
           <span>
             <span className="block text-lg font-bold tracking-wide">shahidhir</span>
