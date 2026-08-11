@@ -13,7 +13,7 @@ export default function ThanksPage() {
         <img
           src="/2-removebg-preview.png"
           alt="Shahi Dhir logo"
-          className="mx-auto mb-8 h-24 w-44 rounded-md border border-cyanGlow/25 bg-white/5 object-contain p-2"
+          className="mx-auto mb-8 h-28 w-56 rounded-md border border-cyanGlow/25 bg-white/5 object-contain p-2"
         />
         <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyanGlow">Message Received</p>
         <h1 className="mt-4 text-4xl font-black md:text-6xl">Thank You</h1>

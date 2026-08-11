@@ -11,7 +11,7 @@ export function Footer() {
             <img
               src="/2-removebg-preview.png"
               alt="Shahi Dhir logo"
-              className="h-14 w-28 rounded-md border border-cyanGlow/20 bg-white/5 object-contain p-1"
+              className="h-18 w-40 rounded-md border border-cyanGlow/20 bg-white/5 object-contain p-1.5"
             />
             <h2 className="text-2xl font-bold">shahidhir</h2>
           </div>

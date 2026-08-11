@@ -11,7 +11,7 @@ export function Navbar() {
           <img
             src="/2-removebg-preview.png"
             alt="Shahi Dhir logo"
-            className="h-12 w-24 rounded-md border border-cyanGlow/25 bg-white/5 object-contain object-center p-1 shadow-glow"
+            className="h-16 w-36 rounded-md border border-cyanGlow/25 bg-white/5 object-contain object-center p-1.5 shadow-glow"
           />
           <span>
             <span className="block text-lg font-bold tracking-wide">shahidhir</span>
