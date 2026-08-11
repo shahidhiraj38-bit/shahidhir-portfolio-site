@@ -8,9 +8,11 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-4">
-            <span className="rounded-md border border-cyanGlow/25 bg-white/5 px-4 py-3">
-              <span className="block text-2xl font-black leading-none tracking-[0.16em] text-white">SHAHIDHIR</span>
-            </span>
+            <img
+              src="/2-removebg-preview.png"
+              alt="Shahi Dhir logo"
+              className="h-12 w-28 rounded-md border border-cyanGlow/20 bg-white p-1 object-contain"
+            />
             <h2 className="text-2xl font-bold">shahidhir</h2>
           </div>
           <p className="mt-4 max-w-xl text-sm leading-7 text-white/60">

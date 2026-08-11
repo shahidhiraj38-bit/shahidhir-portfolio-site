@@ -30,27 +30,15 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="soft-animate rounded-lg border border-cyanGlow/20 bg-white/[0.06] p-4 shadow-glow backdrop-blur md:p-6">
-            <div className="relative min-h-[540px] overflow-hidden rounded-lg bg-[radial-gradient(circle_at_50%_18%,rgba(33,245,255,.32),transparent_28%),linear-gradient(145deg,#0d1328,#111827_48%,#111c20)]">
-              <img
-                src="/dhir-hero-photo.jpg"
-                alt="Dhir Bahadur Shahi"
-                className="absolute inset-x-8 top-8 z-10 mx-auto h-[410px] w-[78%] rounded-lg border border-white/10 object-cover object-top shadow-card"
-              />
-              <div className="absolute inset-x-10 bottom-28 z-20 h-20 rounded-t-lg border border-cyanGlow/25 bg-gradient-to-b from-cyanGlow/20 to-graphite shadow-glow">
-                <div className="mx-auto mt-3 h-2 w-28 rounded-full bg-cyanGlow/70" />
-                <div className="mx-auto mt-3 h-8 w-52 rounded-md border border-white/15 bg-ink/75" />
-              </div>
-              <div className="absolute inset-x-4 bottom-12 z-30 h-20 rounded-lg border border-white/10 bg-[linear-gradient(100deg,#332415,#101827_52%,#16291f)] shadow-card">
-                <div className="absolute left-8 top-5 h-3 w-28 rounded-full bg-limeGlow/40" />
-                <div className="absolute right-8 top-4 h-10 w-24 rounded-md border border-cyanGlow/25 bg-cyanGlow/10" />
-              </div>
-              <div className="absolute left-6 top-6 z-30 rounded-md border border-white/10 bg-ink/80 px-4 py-3 backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyanGlow">AI . Strategy . Mindset</p>
-              </div>
-              <div className="absolute inset-x-7 bottom-4 z-40 rounded-md border border-white/10 bg-ink/85 p-4 backdrop-blur">
-                <h2 className="text-3xl font-black">Dhir Bahadur Shahi</h2>
-                <p className="mt-1 text-sm text-white/65">Premium AI marketing consultant for modern business growth.</p>
+          <div className="soft-animate rounded-lg border border-cyanGlow/20 bg-white/[0.06] p-6 shadow-glow backdrop-blur">
+            <div className="aspect-[4/5] rounded-lg bg-[radial-gradient(circle_at_50%_35%,rgba(33,245,255,.35),transparent_25%),linear-gradient(145deg,#0d1328,#111827_45%,#111c20)] p-8">
+              <div className="flex h-full flex-col justify-between">
+                <div className="text-right text-sm text-white/55">AI . Strategy . Mindset</div>
+                <div>
+                  <div className="mb-5 h-24 w-24 rounded-full border border-cyanGlow/40 bg-cyanGlow/10 shadow-glow" />
+                  <h2 className="text-4xl font-black">shahidhir</h2>
+                  <p className="mt-3 text-white/65">Premium growth consulting for the AI era.</p>
+                </div>
               </div>
             </div>
           </div>
