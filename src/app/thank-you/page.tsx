@@ -11,9 +11,9 @@ export default function ThankYouPage() {
     <section className="grid min-h-[80vh] place-items-center bg-ink bg-mesh px-5 py-24">
       <div className="max-w-2xl rounded-lg premium-border p-10 text-center shadow-glow">
         <img
-          src="/2-removebg-preview.png"
+          src="/sd1-removebg-preview.png"
           alt="Shahi Dhir logo"
-          className="mx-auto mb-8 h-20 w-40 rounded-md border border-cyanGlow/25 bg-white object-contain p-2"
+          className="mx-auto mb-8 h-20 w-40 rounded-md border border-cyanGlow/25 bg-[radial-gradient(circle_at_50%_25%,rgba(33,245,255,.22),rgba(255,255,255,.08)_45%,rgba(5,7,13,.82))] object-contain p-2"
         />
         <h1 className="text-4xl font-black md:text-6xl">Thank You</h1>
         <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-white/68">

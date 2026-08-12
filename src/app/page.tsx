@@ -30,15 +30,21 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="soft-animate rounded-lg border border-cyanGlow/20 bg-white/[0.06] p-6 shadow-glow backdrop-blur">
-            <div className="aspect-[4/5] rounded-lg bg-[radial-gradient(circle_at_50%_35%,rgba(33,245,255,.35),transparent_25%),linear-gradient(145deg,#0d1328,#111827_45%,#111c20)] p-8">
-              <div className="flex h-full flex-col justify-between">
-                <div className="text-right text-sm text-white/55">AI . Strategy . Mindset</div>
-                <div>
-                  <div className="mb-5 h-24 w-24 rounded-full border border-cyanGlow/40 bg-cyanGlow/10 shadow-glow" />
-                  <h2 className="text-4xl font-black">shahidhir</h2>
-                  <p className="mt-3 text-white/65">Premium growth consulting for the AI era.</p>
-                </div>
+          <div className="soft-animate rounded-lg border border-cyanGlow/20 bg-white/[0.06] p-4 shadow-glow backdrop-blur md:p-6">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-[radial-gradient(circle_at_50%_20%,rgba(33,245,255,.3),transparent_30%),linear-gradient(145deg,#0d1328,#111827_45%,#111c20)]">
+              <img
+                src="/hero-landing.png"
+                alt="Dhir Bahadur Shahi working with AI marketing strategy"
+                className="h-full w-full object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-transparent" />
+              <div className="absolute left-5 right-5 top-5 flex items-center justify-between rounded-md border border-white/10 bg-ink/60 px-4 py-3 backdrop-blur">
+                <span className="text-xs font-semibold uppercase tracking-[0.22em] text-cyanGlow">AI . Strategy . Growth</span>
+                <span className="h-2 w-2 rounded-full bg-limeGlow shadow-glow" />
+              </div>
+              <div className="absolute inset-x-5 bottom-5 rounded-md border border-white/10 bg-ink/82 p-5 backdrop-blur">
+                <h2 className="text-3xl font-black">shahidhir</h2>
+                <p className="mt-2 text-sm leading-6 text-white/68">Premium AI marketing consultant building smarter digital growth systems.</p>
               </div>
             </div>
           </div>

@@ -9,9 +9,9 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-4">
             <img
-              src="/2-removebg-preview.png"
+              src="/sd1-removebg-preview.png"
               alt="Shahi Dhir logo"
-              className="h-12 w-28 rounded-md border border-cyanGlow/20 bg-white p-1 object-contain"
+              className="h-12 w-28 rounded-md border border-cyanGlow/25 bg-[radial-gradient(circle_at_50%_25%,rgba(33,245,255,.22),rgba(255,255,255,.08)_45%,rgba(5,7,13,.82))] p-1 object-contain"
             />
             <h2 className="text-2xl font-bold">shahidhir</h2>
           </div>
