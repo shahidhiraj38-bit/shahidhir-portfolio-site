@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
-import { FlodeskForm } from "@/components/FlodeskForm";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -29,7 +29,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <FlodeskForm />
+        <ContactForm />
       </div>
     </section>
   );
