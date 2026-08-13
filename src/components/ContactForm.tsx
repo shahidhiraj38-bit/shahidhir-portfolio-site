@@ -1,10 +1,41 @@
+"use client";
+
+import { useState } from "react";
+
 export function ContactForm() {
+  const [status, setStatus] = useState<"idle" | "sending" | "error">("idle");
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setStatus("sending");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/shahidhiraj38@gmail.com", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error("FormSubmit request failed");
+      }
+
+      window.location.href = "/thanks";
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
-    <form action="https://formsubmit.co/shahidhiraj38@gmail.com" method="POST" className="rounded-lg premium-border p-6 shadow-card">
+    <form action="https://formsubmit.co/shahidhiraj38@gmail.com" method="POST" acceptCharset="UTF-8" onSubmit={handleSubmit} className="rounded-lg premium-border p-6 shadow-card">
       <input type="hidden" name="_subject" value="New consultation request from shahidhir website" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_next" value="/thanks" />
       <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
       <div className="mb-6">
         <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyanGlow">Book Consultation</p>
@@ -28,8 +59,13 @@ export function ContactForm() {
         </select></label>
       </div>
       <label className="mt-5 block text-sm font-medium text-white/70">Message<textarea required name="message" rows={6} className="mt-2 w-full rounded-md border border-white/10 bg-ink px-4 py-3 text-white outline-none transition focus:border-cyanGlow" /></label>
-      <button type="submit" className="mt-6 w-full rounded-md bg-cyanGlow px-6 py-4 font-bold text-ink shadow-glow transition hover:bg-limeGlow md:w-auto">
-        Book Consultation
+      {status === "error" && (
+        <p className="mt-5 rounded-md border border-red-400/30 bg-red-500/10 px-4 py-3 text-sm text-red-100">
+          The form could not send. Please check your internet connection and try again.
+        </p>
+      )}
+      <button type="submit" disabled={status === "sending"} className="mt-6 w-full rounded-md bg-cyanGlow px-6 py-4 font-bold text-ink shadow-glow transition hover:bg-limeGlow disabled:cursor-wait disabled:opacity-70 md:w-auto">
+        {status === "sending" ? "Sending..." : "Book Consultation"}
       </button>
     </form>
   );
